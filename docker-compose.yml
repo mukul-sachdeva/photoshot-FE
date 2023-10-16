@@ -2,7 +2,8 @@ version: "3"
 
 services:
   postgres:
-    image: postgres:14
+    image: postgres:latest
+    platform: windows/amd64
     restart: always
     environment:
       POSTGRES_USER: photoshot
